@@ -79,7 +79,7 @@ class Image extends Component {
                 if (
                     this.props.imageURL.image[index].href.indexOf("orig.mp") !== -1
                 ) {
-                    return this.mediaURL = <ReactPlayer url={this.props.imageURL.image[index].href} playing/>;
+                    return this.mediaURL = <ReactPlayer url={this.props.imageURL.image[index].href} playing className="img-fluid"/>;
                 } else if (
                     this.props.imageURL.image[index].href.indexOf("orig.wa") !== -1 ||
                     this.props.imageURL.image[index].href.indexOf("orig.mp3") !== -1
@@ -88,7 +88,7 @@ class Image extends Component {
                 }else if(
                     this.props.imageURL.image[index].href.indexOf("orig.jp") !== -1
                 ){
-                    return this.mediaURL = <img src={this.props.imageURL.image[index].href} style={{width: "50%", height: "50%"}}/>;
+                    return this.mediaURL = <img src={this.props.imageURL.image[index].href} className="img-fluid"/>;
                 }
             }
             ); 
