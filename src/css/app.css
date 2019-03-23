@@ -1,0 +1,192 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+  }
+  
+  .header1 {
+    /*display: flex;
+    /*flex-wrap: wrap;*/
+    flex: 1;
+  
+    margin: 0 auto;
+    background-image: url("../assets/StarrySky.jpg");
+    color: #fff;
+    text-align: center;
+    width: 100%;
+    height: 90px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  
+  title {
+    flex-shrink: 1;
+  }
+  
+  .logo {
+    background-image: url("../assets/nasa_logo-large.ee501ef4.png");
+    background-repeat: no-repeat;
+    background-size: 50px;
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+  }
+  
+  .search {
+    margin-left: 50px;
+  }
+  
+  .image {
+    margin-top: 100;
+    padding-top: 100;
+  }
+  
+  /*
+  .search-area {
+    margin-top: 100;
+    padding-top: 100;
+  }
+  <div className="container search-area justify-content-md-center">
+  */
+  
+  .form-search {
+    margin: 50;
+    text-align: "left";
+    overflow: "visible";
+    color: #fff;
+    border-color: blue;
+    font-size: 20px;
+    font-weight: 800;
+    display: inline;
+  }
+  
+  .Search_input {
+    background: transparent;
+    border-style: solid;
+    border-color: blue;
+    /*border-radius: 50px;*/
+    text-align: left;
+    color: white;
+    padding-left: 20px;
+  }
+  
+  .form-search placeholder {
+    color: #fff;
+    width: "100px";
+    height: 29px;
+  }
+  
+  .form-media {
+    /*transform: translate(-50%, -50%);*/
+    margin-top: 3px;
+    width: 150px;
+    height: 32px;
+    color: transparent;
+  
+    border-color: blue;
+    box-shadow: 0px 0px 2px 2px blue;
+    font-weight: 800;
+  }
+  
+  .form-media select {
+    background: rgba(25, 37, 199, 0.856);
+    /*background: transparent;*/
+    color: #fff;
+    width: 150px;
+    height: 32px;
+    border: none;
+    font-size: 20px;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.5);
+  }
+  
+  .yearpicker {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    text-align: "left";
+    overflow: "visible";
+    color: #fff;
+    /*border-color: blue;*/
+    /* box-shadow: 0px 0px 2px 2px blue;*/
+    font-size: 15px;
+    font-weight: 500;
+  }
+  
+  .yearpicker span {
+    margin-left: 10px;
+  
+    padding-right: 10px;
+    padding-left: 20px;
+    color: black;
+  }
+  
+  .col-centered {
+    float: none;
+    margin: 0 auto;
+  }
+  
+  .card-block {
+    color: black;
+  }
+  /*45 Booklist styles
+  .list {
+    /*display: grid;
+  display: inline-block;
+  margin: 20px 0 10px 0;
+  /*grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 4fr;
+    grid-gap: 0.5em;
+  }
+  */
+  .card-container {
+    width: resize /*450px*/;
+  
+    border: 1px solid rgba(0, 0, 0.125);
+    margin: 0 auto;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+  
+  .desc {
+    height: 30px;
+    padding: 10px;
+  }
+  
+  .desc h2 {
+    font-size: 1em;
+    font-weight: 400;
+  }
+  
+  .desc h3,
+  p {
+    font-weight: 200;
+  }
+  
+  desc h3 {
+    color: #6c757d;
+    font-size: 1em;
+    padding: 10px 1 10px 0;
+  }
+  
+  .filter_lable {
+    font-size: 12px;
+    color: black;
+    font-weight: bold;
+    text-align: left;
+    left: 100px;
+    margin-left: 1rem;
+  
+    bottom: 0;
+    /*margin: 0 auto;
+      margin: 16px;*/
+    padding: 10px 1 10px 0;
+  }
+  
+  .tab-content {
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    padding: 10px;
+    font-size: 15px;
+  }
+  
