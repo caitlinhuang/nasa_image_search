@@ -38,7 +38,8 @@ class Image extends Component {
         this.props.mediaSearch(id);
         this.props.mediaDetailSearch(id);
     }  
-  
+
+ 
     render(){
         this.nasa_id = this.props.match.params.nasa_id;
         if(this.props.imageDetail.imageDetail !== null &&
@@ -110,77 +111,79 @@ class Image extends Component {
         const twitterUrl = `https://twitter.com/home?status=${this.shareURL}`;
         const linkedinUrl = `https://www.linkedin.com/shareArticle?mini=true&url=${this.shareURL}`;
 
-
+        let socialShare = (
+          <div className="socialShareButton row align-items-center">
+            <h6 class="font-weight-bold  ">
+              {" "}
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Share this media:
+              &nbsp;&nbsp;
+            </h6>
+            <a className="share-facebook" href={facebookUrl} target="_blank">
+              <i className="fa fa-facebook-square d-flex justify-content-end" />
+            </a>
+            <a href={linkedinUrl} target="_blank">
+              <i
+                className="fa fa-linkedin-square d-flex justify-content-emd ml-1"
+                style={{ color: "#5592f4" }}
+              />
+            </a>
+            <a href={twitterUrl} target="_blank">
+              <i
+                className="fa fa-twitter-square d-flex justify-content-end ml-1"
+                style={{ color: "#555cf4" }}
+              />
+            </a>
+          </div>
+        );
+      
         return (
-          
-            <div className="container imageDetail">
-              <br /><br />
-              <h3 className="text-center">{this.title}</h3>
-              <div className="row">
-                <div classNmae="col">
-                  <div className="card border-0" style={{ width: "40rem" }}>
-                    <div className="card-body">{this.mediaURL}</div>
-                  </div>
+          <div className="container imageDetail">
+            <br />
+            <br />
+            <h3 className="text-center">{this.title}</h3>
+            <div className="row">
+              <div classNmae="col">
+                <div className="card border-0" style={{ width: "40rem" }}>
+                  <div className="card-body">{this.mediaURL}</div>
                 </div>
-                <div classNmae="col">
-                  <br />
-                  <div className="card border-0" style={{ width: "30rem" }}>
-                    <div className="card-body">
-                      <p cardName="card-text">
-                        {" "}
-                        <san class="font-weight-bold">Description: </san>{" "}
-                        {this.description}{" "}
-                      </p>
-                      <p>
-                        {" "}
-                        <san class="font-weight-bold"> Center : </san>
-                        {this.center}{" "}
-                      </p>
-                      <p>
-                        {" "}
-                        <san class="font-weight-bold"> NASA ID : </san>
-                        {this.nasa_id}{" "}
-                      </p>
-                    </div>
+              </div>
+              <div classNmae="col">
+                <br />
+                {socialShare}
+                <div className="card border-0" style={{ width: "30rem" }}>
+                  <div className="card-body">
+                    <p cardName="card-text">
+                      {" "}
+                      <san class="font-weight-bold">Description: </san>{" "}
+                      {this.description}{" "}
+                    </p>
+                    <p>
+                      {" "}
+                      <san class="font-weight-bold"> Center: </san>
+                      {this.center}{" "}
+                    </p>
+                    <p>
+                      {" "}
+                      <san class="font-weight-bold"> NASA ID: </san>
+                      {this.nasa_id}{" "}
+                    </p>
                   </div>
                 </div>
               </div>
-            
-
-              <div className="socialShareButton ">
-          <h6 class="font-weight-bold m-0 p-0">
-            Share this media asset:
-          </h6>
-          <a className="share-facebook" href={facebookUrl} target="_blank">
-            <i className="fa fa-facebook-square" />
-          </a>
-          <a href={linkedinUrl} target="_blank">
-            <i
-              className="fa fa-linkedin-square ml-1"
-              style={{ color: "#5592f4" }}
-            />
-          </a>
-          <a href={twitterUrl} target="_blank">
-            <i
-              className="fa fa-twitter-square ml-1"
-              style={{ color: "#555cf4" }}
-            />
-          </a>
-        </div>
-      </div>
-          );
-        }
+            </div>
+          </div>
+        );
       }
-
-const mapStateToProps = state => ({
-    imageURL: state.image,
-    imageDetail: state.imageDetail
-})
-
-export default connect(
-    mapStateToProps,
-    { mediaSearch, mediaDetailSearch }
-  )(Image);
-
-/*export default connect(mapStateToProps, mapDispatchToProps)(Image)*/
-
+    }
+    
+    const mapStateToProps = state => ({
+      imageURL: state.image,
+      imageDetail: state.imageDetail
+    });
+    
+    export default connect(
+      mapStateToProps,
+      { mediaSearch, mediaDetailSearch }
+    )(Image);
+    
+    /*export default connect(mapStateToProps, mapDispatchToProps)(Image)*/
