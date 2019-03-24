@@ -1,3 +1,8 @@
+/*
+FileName: socialShare.css
+Author: Caitlin Huang
+Description:  The css file for the social media share buttons.
+*/
 @keyframes socialShareAnimation {
     from {opacity: 0;}
     to {opacity: 1;}

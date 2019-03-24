@@ -1,5 +1,8 @@
-/*@import "../../font-awesome/css/font-awesome.min.css";*/
-
+/*
+FileName: yearPicker.css
+Author: Caitlin Huang
+Description:  The css file for the year picker.
+*/
 .picker-panel {
   position: absolute;
   top: 32px;

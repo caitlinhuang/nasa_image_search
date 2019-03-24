@@ -1,3 +1,8 @@
+/*
+FileName: image.css
+Author: Caitlin Huang
+Description:  The css file for images.
+*/
 .image:hover,
 .image:hover span {
   visibility: visible;
