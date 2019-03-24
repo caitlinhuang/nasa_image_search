@@ -9,7 +9,9 @@ import "bootstrap/dist/css/bootstrap.css";
 import { Provider } from "react-redux";
 import { Route, BrowserRouter, Switch } from 'react-router-dom'
 
+
 class App extends Component {
+
   render() {
     return (
       <Provider store={store}>
@@ -19,8 +21,8 @@ class App extends Component {
               <Header />
             </div>
             <Switch>
-              <Route exact path='/' component={Images}/>
-              <Route path='/:nasa_id' component={Image} />
+              <Route exact path='/nasa_image_search' component={Images}/>
+              <Route path='/nasa_image_search/:nasa_id' component={Image} />
             </Switch>
         </div>
         </BrowserRouter>

@@ -79,7 +79,34 @@ class Image extends Component {
                 if (
                     this.props.imageURL.image[index].href.indexOf("orig.mp") !== -1
                 ) {
-                    return this.mediaURL = <ReactPlayer url={this.props.imageURL.image[index].href} playing className="img-fluid"/>;
+                  return (this.mediaURL = (
+                    <div className="player-wrapper">
+                      <ReactPlayer
+                        url={this.props.imageURL.image[index].href}
+                        className="react-player img-fluid"
+                        playing={this.state.playing}
+                        width="100%"
+                        height="100%"
+                        onPlay={() => this.setState({ playing: true })}
+                        onPause={() => this.setState({ playing: false })}
+                      />
+        
+                      <button
+                        btn
+                        btn-outline-secondary
+                        onClick={() => this.setState({ playing: true })}
+                      >
+                        Play
+                      </button>
+                      <button
+                        btn
+                        btn-outline-secondary
+                        onClick={() => this.setState({ playing: false })}
+                      >
+                        Pause
+                      </button>
+                    </div>
+                  ));
                 } else if (
                     this.props.imageURL.image[index].href.indexOf("orig.wa") !== -1 ||
                     this.props.imageURL.image[index].href.indexOf("orig.mp3") !== -1
@@ -98,17 +125,15 @@ class Image extends Component {
 
         return (
             <div className="container imageDetail">
-              <br />
-              <br />
+              <br /><br />
+              <h3 className="text-center">{this.title}</h3>
               <div className="row">
                 <div classNmae="col">
                   <div className="card border-0" style={{ width: "40rem" }}>
-                    <h3 className="card-title text-center">{this.title}</h3>
                     <div className="card-body">{this.mediaURL}</div>
                   </div>
                 </div>
                 <div classNmae="col">
-                  <br />
                   <br />
                   <div className="card border-0" style={{ width: "30rem" }}>
                     <div className="card-body">

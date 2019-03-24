@@ -154,7 +154,7 @@ class Images extends Component {
             return (
               <div key={index}>
                 <div className="card imghov">
-                  <Link to={"/" + this.filteredImages[index].data[0].nasa_id}>
+                  <Link to={"/nasa_image_search/" + this.filteredImages[index].data[0].nasa_id}>
                     <img src={imageDisplay} className=" img-fluid" alt="" />
                   </Link>
                   <div class="card-body">
