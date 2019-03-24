@@ -36,19 +36,6 @@ const SearchArea = props => {
                 Submit
               </button>
             </div>
-
-            {/*<div class="col-auto mb-2">
-              <span> Filter by Year </span>
-
-              <span> From: </span>
-              <select onChange={props.handleYearChange}>
-                {props.handleYearDropList()}
-              </select>
-              <span> to: </span>
-              <select onChange={props.handleYearChange}>
-                {props.handleYearDropList()}
-              </select>
-            </div>*/}
           </div>
         </form>
       </div>

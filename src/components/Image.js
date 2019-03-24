@@ -1,8 +1,8 @@
 /*
 FileName: Image.js
 Author: Caitlin Huang
-Description:  This program displays the NASA images returned from the search.  
-It displays the image, the title, the media type and the NASA ID of the image
+Description:  This program displays the detailed information of the selected NASA media.  
+It also allows user to view or play the media.
 */
 
 import React, { Component } from "react";
