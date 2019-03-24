@@ -8,28 +8,35 @@ Description:  The css file for the social media share buttons.
     to {opacity: 1;}
 }
 
-.socialShareContainer {
-    .socialShareButton {
-        height: 750px;
-        line-height: 750px;
-        padding: 0px 25px;
-        background: #666;
-        color: #fff;
-        cursor: pointer;
-    }
-    .closeShare {
-        display: none;
-        opacity: 0;
-    }
-    .openShare {
-        display: block;
-        opacity: 1;
-        animation: socialShareAnimation 1s;
-    }
-    i {
-        font-size: 50px;
-        color: #666;
-        margin: 0px 10px;
-    }
-
-}
+.socialShareButton {
+    /*height: 750px;
+    line-height: 750px; */
+    padding: 0px 15px;
+    /*background: #666;*/
+    /*color: #fff;*/
+    cursor: pointer;
+    font-size: 36px;
+    /* color: #666;*/
+    color: red;
+    margin: 0px 10px;
+  }
+  
+  .share-facebook .i {
+    color: red;
+    font-size: 36px;
+  }
+  .closeShare {
+    display: none;
+    opacity: 0;
+  }
+  
+  .openShare {
+    display: block;
+    opacity: 1;
+    animation: socialShareAnimation 1s;
+  }
+  .i {
+    font-size: 50px;
+    color: #666;
+    margin: 0px 10px;
+  }
