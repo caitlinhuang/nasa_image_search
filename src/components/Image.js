@@ -58,7 +58,10 @@ class Image extends Component {
             this.props.imageURL.image !== undefined ){
             this.props.imageURL.image.map((image, index) => {
                 if (
-                    this.props.imageURL.image[index].href.indexOf("orig.mp4") !== -1
+                    this.props.imageURL.image[index].href.indexOf("orig.mp4") !== -1 ||
+                    this.props.imageURL.image[index].href.indexOf("orig.ogv") !== -1 ||
+                    this.props.imageURL.image[index].href.indexOf("orig.webm") !== -1 ||
+                    this.props.imageURL.image[index].href.indexOf("orig.hls") !== -1
                 ) {
                   this.shareURL = this.props.imageURL.image[index].href;
                   return (this.mediaURL = (
@@ -96,10 +99,11 @@ class Image extends Component {
                   this.shareURL = this.props.imageURL.image[index].href;  
                   return this.mediaURL = <ReactAudioPlayer src={this.props.imageURL.image[index].href} autoPlay controls/>;
                 }else if(
-                  this.props.imageURL.image[index].href.indexOf("orig.jp") !== -1
+                  this.props.imageURL.image[index].href.indexOf("orig.jp") !== -1 ||
+                  this.props.imageURL.image[index].href.indexOf("orig.png") !== -1
                 ){
                   this.shareURL = this.props.imageURL.image[index].href; 
-                  return this.mediaURL = <img src={this.props.imageURL.image[index].href} className="img-fluid"/>;
+                  return this.mediaURL = <img src={this.props.imageURL.image[index].href} alt = 'NASA' className="img-fluid"/>;
                 }
             }
             ); 

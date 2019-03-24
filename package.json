@@ -38,10 +38,7 @@
   },
   "browserslist": [
     ">0.2%",
-    "IE 11",
-    "not dead",
-    "not ie < 11",
-    "not op_mini all"
+    "IE 11"
   ],
   "devDependencies": {}
 }
