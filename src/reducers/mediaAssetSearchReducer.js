@@ -1,3 +1,9 @@
+/*
+FileName: mediaAssetSearchReducer.js
+Author: Caitlin Huang
+Description:  The reducer for the search action that returns a set of URLs for the selected media.
+*/
+
 import {GET_MEDIA_URL } from "../actions/types";
 import {GET_MEDIA_URL_RETURN } from "../actions/types";
 

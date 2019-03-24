@@ -1,3 +1,9 @@
+/*
+FileName: index.js
+Author: Caitlin Huang
+Description:  The rootReducer that combines all the reducer implementaions.
+*/
+
 import { combineReducers } from "redux";
 import mediaAssetSearchReducer from "./mediaAssetSearchReducer"
 import mediaDetailSearchReducer from "./mediaDetailSearchReducer"
