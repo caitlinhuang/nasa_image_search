@@ -11,7 +11,7 @@ Description:  The css file for the social media share buttons.
 .socialShareButton {
     /*height: 750px;
     line-height: 750px; */
-    padding: 0px 15px;
+    padding: 0px;
     /*background: #666;*/
     /*color: #fff;*/
     cursor: pointer;
