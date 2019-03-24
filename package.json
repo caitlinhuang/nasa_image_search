@@ -5,11 +5,13 @@
   "homepage": "https://caitlinhuang.github.io/nasa_image_search",
   "dependencies": {
     "axios": "^0.18.0",
+    "babel-polyfill": "^6.26.0",
     "bootstrap": "^4.3.1",
     "firebase": "^5.9.0",
     "gh-pages": "^2.0.1",
     "node-sass": "^4.11.0",
     "react": "^16.8.3",
+    "react-app-polyfill": "^0.2.2",
     "react-audio-player": "^0.11.0",
     "react-dom": "^16.8.3",
     "react-player": "^1.9.3",
@@ -39,5 +41,6 @@
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-  ]
+  ],
+  "devDependencies": {}
 }

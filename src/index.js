@@ -3,6 +3,8 @@ FileName: index.js
 Author: Caitlin Huang
 Description:  The index.js file for the application.
 */
+
+import 'babel-polyfill';
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
