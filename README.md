@@ -9,3 +9,6 @@ Following is a list of features implemented:
   users can also further filter the search reasults by entering the media creation starting year or ending year.
   users can click on an individual media and play/view the details of the selected media. users can start and pause the media player
   users can share the URL of the media through Facebook, Tweeter and LinkedIn
+
+NASA Image API calls used:
+
