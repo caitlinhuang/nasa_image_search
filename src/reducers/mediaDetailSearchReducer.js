@@ -1,3 +1,8 @@
+/*
+FileName: mediaDetailSearchReducer.js
+Author: Caitlin Huang
+Description:  The reducer for the search action that returns the details for the selected media.
+*/
 import {GET_MEDIA_DETAIL } from "../actions/types";
 import {GET_MEDIA_DETAIL_RETURN } from "../actions/types";
 

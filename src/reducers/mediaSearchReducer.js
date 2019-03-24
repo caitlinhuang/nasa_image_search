@@ -1,3 +1,8 @@
+/*
+FileName: mediaSearchReducer.js
+Author: Caitlin Huang
+Description:  The reducer for the search action that returns a set of media that satisfy the combined search conditions.
+*/
 import {GET_MEDIA } from "../actions/types";
 import {GET_MEDIA_RETURN } from "../actions/types";
 
