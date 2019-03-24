@@ -3,40 +3,9 @@ FileName: socialShare.css
 Author: Caitlin Huang
 Description:  The css file for the social media share buttons.
 */
-@keyframes socialShareAnimation {
-    from {opacity: 0;}
-    to {opacity: 1;}
-}
 
 .socialShareButton {
-    /*height: 750px;
-    line-height: 750px; */
-    padding: 0px;
-    /*background: #666;*/
-    /*color: #fff;*/
     cursor: pointer;
     font-size: 36px;
-    /* color: #666;*/
-    color: red;
-    margin: 0px 10px;
-  }
-  
-  .share-facebook .i {
-    color: red;
-    font-size: 36px;
-  }
-  .closeShare {
-    display: none;
-    opacity: 0;
-  }
-  
-  .openShare {
-    display: block;
-    opacity: 1;
-    animation: socialShareAnimation 1s;
-  }
-  .i {
-    font-size: 50px;
-    color: #666;
     margin: 0px 10px;
   }

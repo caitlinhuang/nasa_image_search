@@ -147,29 +147,27 @@ class Image extends Component {
               </div>
             
 
-              <div className="socialShareContainer">
-                <div className="socialShareButton">
-                <h6 class="font-weight-bold text-secondary">
-                  Share this media asset:
-                </h6>
-                <a className="share-facebook" href={facebookUrl} target="_blank">
-              {" "}
-              <i className="fa fa-facebook-square" />
-            </a>
-            <a href={linkedinUrl} target="_blank">
-              {" "}
-              <i
-                className="fa fa-linkedin-square"
-                style={{ color: "#5592f4" }}
-              />
-            </a>
-            <a href={twitterUrl} target="_blank">
-              {" "}
-              <i className="fa fa-twitter-square" style={{ color: "red" }} />
-            </a>
-                </div>           
-              </div>
-            </div>
+              <div className="socialShareButton ">
+          <h6 class="font-weight-bold m-0 p-0">
+            Share this media asset:
+          </h6>
+          <a className="share-facebook" href={facebookUrl} target="_blank">
+            <i className="fa fa-facebook-square" />
+          </a>
+          <a href={linkedinUrl} target="_blank">
+            <i
+              className="fa fa-linkedin-square ml-1"
+              style={{ color: "#5592f4" }}
+            />
+          </a>
+          <a href={twitterUrl} target="_blank">
+            <i
+              className="fa fa-twitter-square ml-1"
+              style={{ color: "#555cf4" }}
+            />
+          </a>
+        </div>
+      </div>
           );
         }
       }
