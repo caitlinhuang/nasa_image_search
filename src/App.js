@@ -6,6 +6,11 @@ import "./css/app.css";
 import "./css/image.css";
 import store from "./store";
 import "bootstrap/dist/css/bootstrap.css";
+/*
+FileName: App.js
+Author: Caitlin Huang
+Description:  The starting point for this application.
+*/
 import { Provider } from "react-redux";
 import { Route, BrowserRouter, Switch } from 'react-router-dom'
 

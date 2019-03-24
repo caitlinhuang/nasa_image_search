@@ -1,3 +1,8 @@
+/*
+FileName: App.test.js
+Author: Caitlin Huang
+Description:  The testing harness for the application.
+*/
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
