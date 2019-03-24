@@ -19,7 +19,7 @@ class Image extends Component {
         super(props);
     
         this.state = {
-          
+          playing: false
         };
     
         this.mediaURL = '';
