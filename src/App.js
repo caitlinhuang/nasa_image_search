@@ -9,7 +9,6 @@ import "bootstrap/dist/css/bootstrap.css";
 import { Provider } from "react-redux";
 import { Route, BrowserRouter, Switch } from 'react-router-dom'
 
-
 class App extends Component {
 
   render() {
