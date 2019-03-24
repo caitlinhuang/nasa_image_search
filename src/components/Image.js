@@ -11,6 +11,7 @@ import mediaSearch  from '../actions/mediaAssetSearchAction';
 import mediaDetailSearch from '../actions/mediaDetailSearchAction'; 
 import ReactPlayer from 'react-player';
 import ReactAudioPlayer from 'react-audio-player';
+import '../css/socialShare.css';
 
 
 class Image extends Component {
@@ -21,12 +22,13 @@ class Image extends Component {
           
         };
     
-        this.videoURL = '';
+        this.mediaURL = '';
         this.title = '';
         this.center = '';
         this.description = '';
         this.media_type = '';
         this.nasa_id = ''
+        this.shareURL = '';
 
     }
 
@@ -57,6 +59,7 @@ class Image extends Component {
                 if (
                     this.props.imageURL.image[index].href.indexOf("orig.mp4") !== -1
                 ) {
+                  this.shareURL = this.props.imageURL.image[index].href;
                   return (this.mediaURL = (
                     <div className="player-wrapper">
                       <ReactPlayer
@@ -89,11 +92,13 @@ class Image extends Component {
                     this.props.imageURL.image[index].href.indexOf("orig.wa") !== -1 ||
                     this.props.imageURL.image[index].href.indexOf("orig.mp3") !== -1
                 ){
-                    return this.mediaURL = <ReactAudioPlayer src={this.props.imageURL.image[index].href} autoPlay controls/>;
+                  this.shareURL = this.props.imageURL.image[index].href;  
+                  return this.mediaURL = <ReactAudioPlayer src={this.props.imageURL.image[index].href} autoPlay controls/>;
                 }else if(
-                    this.props.imageURL.image[index].href.indexOf("orig.jp") !== -1
+                  this.props.imageURL.image[index].href.indexOf("orig.jp") !== -1
                 ){
-                    return this.mediaURL = <img src={this.props.imageURL.image[index].href} className="img-fluid"/>;
+                  this.shareURL = this.props.imageURL.image[index].href; 
+                  return this.mediaURL = <img src={this.props.imageURL.image[index].href} className="img-fluid"/>;
                 }
             }
             ); 
@@ -101,7 +106,13 @@ class Image extends Component {
             return this.mediaURL = <div className="center">Loading media...</div>
         }
 
+        const facebookUrl = `https://www.facebook.com/sharer/sharer.php?u=${this.shareURL}`;
+        const twitterUrl = `https://twitter.com/home?status=${this.shareURL}`;
+        const linkedinUrl = `https://www.linkedin.com/shareArticle?mini=true&url=${this.shareURL}`;
+
+
         return (
+          
             <div className="container imageDetail">
               <br /><br />
               <h3 className="text-center">{this.title}</h3>
@@ -133,6 +144,15 @@ class Image extends Component {
                     </div>
                   </div>
                 </div>
+              </div>
+            
+
+              <div className="socialShareContainer">
+                <div className="socialShareButton">
+                  <a href={facebookUrl} target="_blank"> <i className="fa fa-facebook-square"></i></a>
+                  <a href={linkedinUrl} target="_blank"><i className="fa fa-linkedin-square"></i></a>
+                  <a href={twitterUrl} target="_blank"> <i className="fa fa-twitter-square"></i></a>
+                </div>           
               </div>
             </div>
           );
