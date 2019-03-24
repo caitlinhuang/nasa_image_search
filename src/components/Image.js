@@ -11,22 +11,7 @@ import mediaSearch  from '../actions/mediaAssetSearchAction';
 import mediaDetailSearch from '../actions/mediaDetailSearchAction'; 
 import ReactPlayer from 'react-player';
 import ReactAudioPlayer from 'react-audio-player';
-/*import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';*/
-/*
-import '../css/share.scss';
 
-import {
-    FacebookShareButton,
-    GooglePlusShareButton,
-    LinkedinShareButton,
-    TwitterShareButton,
-  } from 'react-share';
-  import {
-    ShareButtons,
-    ShareCounts,
-    generateShareIcon
-  } from 'react-share';
-*/
 
 class Image extends Component {
     constructor(props) {
@@ -43,13 +28,6 @@ class Image extends Component {
         this.media_type = '';
         this.nasa_id = ''
 
-        
-/*
-          const FacebookIcon = generateShareIcon('facebook');
-          const TwitterIcon = generateShareIcon('twitter');
-          const GooglePlusIcon = generateShareIcon('google');
-          const LinkedinIcon = generateShareIcon('linkedin');
- */   
     }
 
     
@@ -77,7 +55,7 @@ class Image extends Component {
             this.props.imageURL.image !== undefined ){
             this.props.imageURL.image.map((image, index) => {
                 if (
-                    this.props.imageURL.image[index].href.indexOf("orig.mp") !== -1
+                    this.props.imageURL.image[index].href.indexOf("orig.mp4") !== -1
                 ) {
                   return (this.mediaURL = (
                     <div className="player-wrapper">
