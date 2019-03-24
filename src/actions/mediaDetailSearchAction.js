@@ -1,3 +1,10 @@
+/*
+FileName: mediaDetailSearchAction.js
+Author: Caitlin Huang
+Description:  This program make call to NASA Image asset API using NASA ID which will return all the detailed information 
+about the selected media.
+*/
+
 import {GET_MEDIA_DETAIL} from "./types";
 import {GET_MEDIA_DETAIL_RETURN} from "./types";
 import axios from "axios";

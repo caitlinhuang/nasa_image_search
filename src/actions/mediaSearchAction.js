@@ -1,3 +1,10 @@
+/*
+FileName: mediaSearchAction.js
+Author: Caitlin Huang
+Description:  This program make call to NASA Image search API with key words, media type and year range. The API 
+will return all the media that satisfy the search conditions.
+*/
+
 import {GET_MEDIA} from "./types";
 import {GET_MEDIA_RETURN} from "./types";
 import axios from "axios";
