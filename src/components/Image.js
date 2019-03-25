@@ -97,7 +97,7 @@ class Image extends Component {
                     this.props.imageURL.image[index].href.indexOf("orig.mp3") !== -1
                 ){
                   this.shareURL = this.props.imageURL.image[index].href;  
-                  return this.mediaURL = <ReactAudioPlayer src={this.props.imageURL.image[index].href} autoPlay controls/>;
+                  return this.mediaURL = <ReactAudioPlayer src={this.props.imageURL.image[index].href} controls/>;
                 }else if(
                   this.props.imageURL.image[index].href.indexOf("orig.jp") !== -1 ||
                   this.props.imageURL.image[index].href.indexOf("orig.png") !== -1
