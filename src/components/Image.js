@@ -147,8 +147,7 @@ class Image extends Component {
                 <div className="card border-0" style={{ width: "40rem" }}>
                   <div className="card-img-top">{this.mediaURL}
                   </div>
-                  <div className="card-body">{socialShare}</div>
-                  
+                  <div className="card-body center">{socialShare}</div>
                 </div>
               </div>
               <div classNmae="col">
