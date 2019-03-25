@@ -4,7 +4,7 @@ self.__precacheManifest = [
     "url": "/nasa_image_search/static/media/fontawesome-webfont.af7ae505.woff2"
   },
   {
-    "revision": "0daac458038eff8bf078",
+    "revision": "87749f0bee93b3c7a0f2",
     "url": "/nasa_image_search/static/css/main.da4224b6.chunk.css"
   },
   {
@@ -24,8 +24,8 @@ self.__precacheManifest = [
     "url": "/nasa_image_search/static/media/nasa_logo-large.ee501ef4.ee501ef4.png"
   },
   {
-    "revision": "0daac458038eff8bf078",
-    "url": "/nasa_image_search/static/js/main.acb4d022.chunk.js"
+    "revision": "87749f0bee93b3c7a0f2",
+    "url": "/nasa_image_search/static/js/main.618db50a.chunk.js"
   },
   {
     "revision": "fee66e712a8a08eef5805a46892932ad",
@@ -44,7 +44,7 @@ self.__precacheManifest = [
     "url": "/nasa_image_search/static/css/2.a88259a0.chunk.css"
   },
   {
-    "revision": "7a88f8f9d237dd662766f8cfc1af89fb",
+    "revision": "1672bf404995e87d1aa098e16cdf9545",
     "url": "/nasa_image_search/index.html"
   }
 ];

@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/nasa_image_search/precache-manifest.293b81474ed229616bde76d0e5b49fd8.js"
+  "/nasa_image_search/precache-manifest.7b3c3df161b68807b779131818e80a21.js"
 );
 
 workbox.clientsClaim();
