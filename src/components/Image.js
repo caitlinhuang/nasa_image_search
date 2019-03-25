@@ -117,11 +117,7 @@ class Image extends Component {
 
         let socialShare = (
           <div className="socialShareButton row align-items-center">
-            <h6 class="font-weight-bold  ">
-              {" "}
-              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Share this media:
-              &nbsp;&nbsp;
-            </h6>
+           <h6 class="font-weight-bold">Share this media:&nbsp;&nbsp;</h6>
             <a className="share-facebook" href={facebookUrl} target="_blank">
               <i className="fa fa-facebook-square d-flex justify-content-end" />
             </a>
@@ -147,28 +143,31 @@ class Image extends Component {
             <h3 className="text-center">{this.title}</h3>
             <div className="row">
               <div classNmae="col">
+              <br></br>
                 <div className="card border-0" style={{ width: "40rem" }}>
-                  <div className="card-body">{this.mediaURL}</div>
+                  <div className="card-img-top">{this.mediaURL}
+                  </div>
+                  <div className="card-body">{socialShare}</div>
+                  
                 </div>
               </div>
               <div classNmae="col">
-                <br />
-                {socialShare}
                 <div className="card border-0" style={{ width: "30rem" }}>
                   <div className="card-body">
+                
                     <p cardName="card-text">
                       {" "}
-                      <san class="font-weight-bold">Description: </san>{" "}
+                      <span class="font-weight-bold">Description: </span>{" "}
                       {this.description}{" "}
                     </p>
-                    <p>
+                    <p cardName="card-text">
                       {" "}
-                      <san class="font-weight-bold"> Center: </san>
+                      <span class="font-weight-bold"> Center: </span>
                       {this.center}{" "}
                     </p>
-                    <p>
+                    <p cardName="card-text">
                       {" "}
-                      <san class="font-weight-bold"> NASA ID: </san>
+                      <span class="font-weight-bold"> NASA ID: </span>
                       {this.nasa_id}{" "}
                     </p>
                   </div>

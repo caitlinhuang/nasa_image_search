@@ -6,6 +6,6 @@ Description:  The css file for the social media share buttons.
 
 .socialShareButton {
     cursor: pointer;
-    font-size: 36px;
-    margin: 0px 10px;
+    font-size: 32px;
+    margin: 0px;
   }
