@@ -9,7 +9,7 @@ import title from "../assets/nasa_logo-large.ee501ef4.png";
 
 const Header = () => {
   return (
-    <div class="container-fluid header1">
+    <div className="container-fluid header1">
       <div className="row justify-content-center">
         <div className="col-8 offset-2  text-center  ">
           <h3> Welcome to the NASA Image and Video Library</h3>
