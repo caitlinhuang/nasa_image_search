@@ -114,6 +114,7 @@ class Image extends Component {
         const facebookUrl = `https://www.facebook.com/sharer/sharer.php?u=${this.shareURL}`;
         const twitterUrl = `https://twitter.com/home?status=${this.shareURL}`;
         const linkedinUrl = `https://www.linkedin.com/shareArticle?mini=true&url=${this.shareURL}`;
+        const tumblrUrl = `https://www.tumblr.com/new/link=${this.shareURL}`;
 
         let socialShare = (
           <div className="socialShareButton row align-items-center">
@@ -123,7 +124,7 @@ class Image extends Component {
             </a>
             <a href={linkedinUrl} target="_blank">
               <i
-                className="fa fa-linkedin-square d-flex justify-content-emd ml-1"
+                className="fa fa-linkedin-square d-flex justify-content-end ml-1"
                 style={{ color: "#5592f4" }}
               />
             </a>
@@ -131,6 +132,12 @@ class Image extends Component {
               <i
                 className="fa fa-twitter-square d-flex justify-content-end ml-1"
                 style={{ color: "#555cf4" }}
+              />
+            </a>
+            <a href= {tumblrUrl} target = "blank">
+              <i
+                className = "fa fa-tumblr-square d-flex justify-content-end"
+                style={{color: "#555cf4"}}
               />
             </a>
           </div>
@@ -142,7 +149,7 @@ class Image extends Component {
             <br />
             <h3 className="text-center">{this.title}</h3>
             <div className="row">
-              <div classNmae="col">
+              <div className="col">
               <br></br>
                 <div className="card border-0" style={{ width: "40rem" }}>
                   <div className="card-img-top">{this.mediaURL}
