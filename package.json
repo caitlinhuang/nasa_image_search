@@ -4,7 +4,7 @@
   "private": true,
   "homepage": "https://caitlinhuang.github.io/nasa_image_search",
   "dependencies": {
-    "axios": "^0.18.0",
+    "axios": "^0.21.1",
     "babel-polyfill": "^6.26.0",
     "bootstrap": "^4.3.1",
     "firebase": "^5.9.0",
